@@ -1,0 +1,43 @@
+{
+  "name": "@mometa/react-docgen-typescript",
+  "version": "0.0.27",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "imcuttle <imcuttle@163.com>",
+  "description": "forked from https://github.com/styleguidist/react-docgen-typescript",
+  "main": "lib",
+  "types": "types",
+  "module": "es",
+  "files": [
+    "lib",
+    "es",
+    "types"
+  ],
+  "scripts": {
+    "__test": "../../scripts/run test",
+    "build": "../../scripts/run build",
+    "packlimit": "../../scripts/run packlimit",
+    "dev": "npm run build -- --watch",
+    "prepublishOnly": "npm run build && npm run packlimit",
+    "version": "npm run packlimit"
+  },
+  "keywords": [
+    "imcuttle",
+    "react-docgen-typescript",
+    "mometa"
+  ],
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcuttle/mometa.git",
+    "directory": "packages/react-docgen-typescript"
+  }
+}

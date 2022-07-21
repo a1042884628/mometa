@@ -1,0 +1,127 @@
+@import '../../style/_var';
+
+.#{$prefix}-material-panel {
+  height: 100%;
+
+  &-dragging {
+    .ant-image-mask {
+      //display: none;
+    }
+  }
+
+  &__tabs {
+    height: 100%;
+    overflow: visible !important;
+
+    .mmt-ant-tabs-content-holder {
+      flex: 1;
+      //overflow: auto;
+      //margin-right: -10px;
+      //padding-right: 10px;
+      //
+      //padding-top: 20px;
+      //padding-bottom: 40px;
+
+      > .mmt-ant-tabs-content {
+        height: 100%;
+      }
+
+      .mmt-ant-tabs-tabpane {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .mmt-ant-tabs-nav {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__mp {
+    overflow: auto;
+    flex: 1;
+    height: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-right: -10px;
+    padding-right: 10px;
+  }
+
+  &__search-wrapper {
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+  &__search {
+    margin-bottom: 4px;
+  }
+
+  &__asset-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__cell {
+      cursor: move;
+      max-width: 33.33333%;
+      width: 33.33333%;
+      padding: 4px;
+      background-color: #fff;
+
+      border: 1px solid #e9e2e2;
+      margin-right: -1px;
+      margin-bottom: -1px;
+
+      display: flex;
+      flex-direction: column;
+
+      height: auto;
+      aspect-ratio: 1/1;
+
+      &__icon {
+        height: 16px !important;
+        width: 16px !important;
+        line-height: 1 !important;
+      }
+
+      &__img {
+        width: auto !important;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        margin: auto;
+
+        &__wrapper {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+
+          height: 100%;
+          width: 100%;
+          max-height: 70px;
+          object-fit: contain;
+          margin: auto;
+          overflow: hidden;
+        }
+      }
+      &__name {
+        margin-top: 4px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: inherit;
+          &:hover {
+            color: #399bf5;
+          }
+        }
+      }
+    }
+  }
+}

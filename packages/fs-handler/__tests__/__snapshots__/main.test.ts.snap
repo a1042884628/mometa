@@ -1,0 +1,542 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fsHandler INSERT_NODE 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <p className=\\"empty-2\\"></p>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler INSERT_NODE material 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+import { Button } from 'antd'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <Button type=\\"default\\">按钮</Button>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler INSERT_NODE material existed name 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+import { Tabs as _Tabs } from 'antd'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <_Tabs>
+            <_Tabs.Panel></_Tabs.Panel>
+          </_Tabs>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler INSERT_NODE wrap 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <>
+            <p className=\\"empty\\"></p>
+            <p className=\\"empty-2\\"></p>
+          </>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler INSERT_NODE wrap 2`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <>
+            <p className=\\"empty-2\\"></p>
+            <p className=\\"empty\\"></p>
+          </>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler INSERT_NODE wrap 3`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <>
+            <p className=\\"empty-2\\"></p>
+          </>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler MOVE_NODE 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p>单独 p</p>
+          <p className=\\"empty\\"></p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler getAddMaterialOps fsHandler 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+import Antd from 'antd'
+import { Button } from 'antd'
+import 'antd/lib/button/style/css'
+import 'antd/lib/button/style'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <>
+            <>
+              <Antd />
+              <Button type=\\"default\\">按钮</Button>
+            </>
+          </>
+          <p>单独 p</p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler getAddMaterialOps spec 1`] = `
+Object {
+  "insertCode": Object {
+    "preload": Object {
+      "data": Object {
+        "newText": "<>
+      <Antd />
+      <Button type=\\"default\\">按钮</Button>
+    </>",
+      },
+      "filename": "/a.js",
+      "to": Object {
+        "column": 3,
+        "line": 6,
+      },
+    },
+    "type": 3,
+  },
+  "insertDeps": Array [
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";import \\"antd/lib/button/style\\";",
+        },
+        "filename": "/a.js",
+        "to": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "type": 3,
+    },
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";import \\"antd/lib/button/style/css\\";",
+        },
+        "filename": "/a.js",
+        "to": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "type": 3,
+    },
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";import { Input, Button } from 'antd';",
+        },
+        "end": Position {
+          "column": 28,
+          "line": 1,
+        },
+        "filename": "/a.js",
+        "identifierName": undefined,
+        "start": Position {
+          "column": 0,
+          "line": 1,
+        },
+        "text": "import { Input } from 'antd'",
+      },
+      "type": 1,
+    },
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";import Antd from \\"antd\\";",
+        },
+        "filename": "/a.js",
+        "to": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "type": 3,
+    },
+  ],
+}
+`;
+
+exports[`fsHandler getAddMaterialOps spec cjs 1`] = `
+Object {
+  "insertCode": Object {
+    "preload": Object {
+      "data": Object {
+        "newText": "<>
+      <Antd />
+      <Button type=\\"default\\">按钮</Button>
+    </>",
+      },
+      "filename": "/a.js",
+      "to": Object {
+        "column": 3,
+        "line": 6,
+      },
+    },
+    "type": 3,
+  },
+  "insertDeps": Array [
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";require(\\"antd/lib/button/style\\");",
+        },
+        "filename": "/a.js",
+        "to": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "type": 3,
+    },
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";require(\\"antd/lib/button/style/css\\");",
+        },
+        "filename": "/a.js",
+        "to": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "type": 3,
+    },
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";var { Input,Button } = require(antd);",
+        },
+        "end": Position {
+          "column": 28,
+          "line": 1,
+        },
+        "filename": "/a.js",
+        "identifierName": undefined,
+        "start": Position {
+          "column": 0,
+          "line": 1,
+        },
+        "text": "import { Input } from 'antd'",
+      },
+      "type": 1,
+    },
+    Object {
+      "preload": Object {
+        "data": Object {
+          "newText": ";var Antd = (function () {
+                        var mod = require(\\"antd\\");
+                        return mod.__esModule ? mod.default : mod
+                        })();",
+        },
+        "filename": "/a.js",
+        "to": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "type": 3,
+    },
+  ],
+}
+`;
+
+exports[`fsHandler getAddMaterialOps spec fsHandler 1`] = `
+"import { Input, Button } from 'antd'
+import 'side-effect'
+import Antd from 'antd'
+import 'antd/lib/button/style/css'
+import 'antd/lib/button/style'
+
+const elem = (
+  <div>
+    <>
+      <Antd />
+      <Button type=\\"default\\">按钮</Button>
+    </>
+    abc
+  </div>
+)
+
+export { Button } from 'antd'"
+`;
+
+exports[`fsHandler nest REPLACE_NODE 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World👌</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <p>simple 66xxxxxasdasdas6</p>
+          <p>
+            nested 2<strong>hahahax</strong>
+          </p>
+          {array.map((x, i) => (
+            <p key={i}>物料_{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler spec case DEL 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;
+
+exports[`fsHandler spec case REPLACE_NODE 1`] = `
+"import React, { StrictMode } from 'react'
+import Tabs from 'antd/es/tabs'
+import 'antd/es/tabs/style/index.css'
+
+type Props = {
+  x: string
+}
+
+const array = new Array(100).fill(1)
+
+export default function App(props: Props) {
+  return (
+    <div>
+      <h1 title={'abc'}>Hello World</h1>
+      <Tabs>
+        <Tabs.TabPane key={'tool'} tab={'物料'}>
+          <p className=\\"empty\\"></p>
+          <span>ppp</span>
+          {array.map((x, i) => (
+            <p key={i}>物料__{i}</p>
+          ))}
+        </Tabs.TabPane>
+        <Tabs.TabPane key={'attr'} tab={'属性'}></Tabs.TabPane>
+      </Tabs>
+    </div>
+  )
+}"
+`;

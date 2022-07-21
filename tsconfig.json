@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "declaration": false,
+    "moduleResolution": "node",
+    "outDir": "types",
+    "preserveSymlinks": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "test", "__tests__"]
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@mometa/fs-handler": ["../fs-handler/src"]
+    }
+  }
+}

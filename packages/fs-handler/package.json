@@ -1,0 +1,50 @@
+{
+  "name": "@mometa/fs-handler",
+  "version": "0.0.27",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "imcuttle <imcuttle@163.com>",
+  "description": "代码操作转换核心逻辑，如删除、移动、替换、插入等",
+  "main": "lib",
+  "types": "types",
+  "module": "es",
+  "files": [
+    "lib",
+    "es",
+    "types"
+  ],
+  "scripts": {
+    "test": "../../scripts/run test",
+    "build": "../../scripts/run build",
+    "packlimit": "../../scripts/run packlimit",
+    "dev": "npm run build -- --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run packlimit",
+    "version": "npm test && npm run packlimit"
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.5",
+    "lodash.groupby": "^4.6.0",
+    "memoize-fn": "^2.0.1",
+    "pify": "^4.0.1",
+    "prettier": "^2.5.1",
+    "run-seq": "^1.0.4"
+  },
+  "devDependencies": {
+    "@mometa/materials-generator": "^0.0.27"
+  },
+  "keywords": [
+    "imcuttle",
+    "fs-handler",
+    "imcuttle",
+    "mometa",
+    "mometa"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcuttle/mometa.git",
+    "directory": "packages/fs-handler"
+  },
+  "gitHead": "333b833f49286bef901694a6f84b1248131098a0"
+}
